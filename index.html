@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGR472 Lab 4</title>
+    <!-- mapbox API -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Turf.js -->
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+</head>
+
+<body>
+
+    <!-- MAP CONTAINER -->
+    <div id='map' class='map'></div>
+
+    <div class="collisions-filter-container">
+        <label><h4>Select data filters</h4></label>
+
+        <div class="collision-check-filter">
+            <input class="collision-checkbox" type="checkbox" value="" id="collision-check-id" checked>
+            Collision Hexbins
+        </div>
+
+        <div class="bounding-box-filter">
+            <input class="bbox-checkbox" type="checkbox" value="" id="bbox-id" checked>
+            Bounding Box
+        </div>
+        
+
+        <form>
+            <fieldset id="collision-type-filter">
+                <label>Filter Collisions</label>
+                <select id="collision-class" name="collision-class">
+                    <!-- Values and names of the filter parks dropdown options-->
+                    <option value="" disabled selected>Choose Filter</option>
+                    <option value="0-5">0-5 collisions</option>
+                    <option value="5-10">5-10 collisions</option>
+                    <option value="10-20">10-20 collisions</option>
+                    <option value="20-30">20-30 collisions</option>
+                    <option value=">30">>30 collisions</option>
+                    <option value="All-collisions">All collisions</option>
+                </select>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="collisions Legend" class='legend'>
+        <h4>Number of Collisions</h4>
+        <div><span style='background-color: #ffbdbd'></span>0-5</div>
+        <div><span style='background-color: #ff7070'></span>5-10</div>
+        <div><span style='background-color: #ff0000'></span>10-20</div>
+        <div><span style='background-color: #a80000'></span>20-30</div>
+        <div><span style='background-color: #4d0000'></span>>30</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

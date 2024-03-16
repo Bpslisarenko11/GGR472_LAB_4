@@ -1,0 +1,46 @@
+.map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.collisions-filter-container {
+    position: relative;
+    font: 16px/22px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: whitesmoke;
+    width: 225px;
+    top: 50px;
+    left: 1050px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#collision-class  {
+    position: relative;
+    width: 150px;
+    top: 50;
+    left: 0px;
+    margin: 5px 0 5px;
+}
+
+.legend {
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    bottom: 0;
+    margin-bottom: 35px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 15px;
+    right: 5px;
+}
+
+.legend div span {
+    display: inline-block;
+    border-radius: 75%; /*round the edges of the legend points to make them circles*/
+    height: 12px; /*height of legend circles*/
+    width: 12px; /* Width of legend circles*/
+    margin-right: 8px; /*spacing of the circles in the legend*/
+}
