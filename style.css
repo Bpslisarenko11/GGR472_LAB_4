@@ -7,17 +7,19 @@
     width: 100%;
 }
 
+/*psoitioning of the collisions-filter-container on the screen*/
 .collisions-filter-container {
     position: relative;
     font: 16px/22px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     background: whitesmoke;
     width: 225px;
-    top: 50px;
+    top: 0px;
     left: 1050px;
     margin-top: 10px;
     padding: 5px;
 }
 
+/*positioning of the collision-class dropdown filter within the collisions-filter-container*/
 #collision-class  {
     position: relative;
     width: 150px;
@@ -26,15 +28,26 @@
     margin: 5px 0 5px;
 }
 
+/*positioning of the zoom button within the collision-filters-container*/
+#zoom-level-button  {
+    position: relative;
+    width: 150px;
+    top: 0;
+    left: 33px;
+    margin: 3px 0 3px;
+}
+
+/*positioning of the map legend on the screen*/
 .legend {
     position: absolute;
     background-color: whitesmoke;
     border-radius: 3px;
     bottom: 0;
     margin-bottom: 35px;
-    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font: 12px/15px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     padding: 15px;
     right: 5px;
+    width: 17.5%; /* set width to be 17.5% of the screen width*/
 }
 
 .legend div span {
